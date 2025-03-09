@@ -9,7 +9,10 @@ import string
 from pytz import timezone
 
 # Configure logging for easier debugging
-logging.basicConfig(filename='/home/ubuntu/bot.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 # Insert your Telegram bot token here
 bot = telebot.TeleBot('6921680287:AAEL2ojcHgaUpOd5Gtq0R6XBtYEEiJW7pd0')
